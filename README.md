@@ -191,7 +191,6 @@ links to the adapters can be found on [Hubot Adapters][hubot-adapters].
 
 Create a separate Campfire user for your bot and get their token from the web
 UI.
-
     % heroku config:add HUBOT_CAMPFIRE_TOKEN="..."
 
 Get the numeric IDs of the rooms you want the bot to join, comma delimited. If
