@@ -10,6 +10,9 @@
 
 module.exports = (robot) ->
 
+  robot.respond /which team is the best/i, (res) ->
+      res.reply "Team dev tooling is the best"
+
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
