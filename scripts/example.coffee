@@ -18,7 +18,7 @@ module.exports = (robot) ->
       if person is "jamie vardy"
         res.send "He is having a party"
       else
-        res.reply "#{person} is at a loser convention"    
+        res.send "#{person} is at a loser convention"    
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
