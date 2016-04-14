@@ -11,7 +11,14 @@
 module.exports = (robot) ->
 
   robot.respond /which team is the best/i, (res) ->
-      res.reply "Team dev tooling is the best"
+      res.reply "I'm glad you ask. I can confirm that Team Dev Tooling are the best at stuff"
+
+  robot.respond /where is (.*)/i, (res) ->
+      person = res.match[1]
+      if person is "jamie vardy"
+        res.send "He is having a party"
+      else
+        res.reply "#{person} is at a loser convention"    
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
